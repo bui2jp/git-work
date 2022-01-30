@@ -10,4 +10,5 @@ mergeには３つ
 3. コンフリクト：
 
 feature2  
+Pull Request
  
