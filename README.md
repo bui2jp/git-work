@@ -1,3 +1,5 @@
+githubで修正
+
 # git-work
 merge
 1. fast Forward :  ブランチのポインタが進むだけ　新たなコミットはできない
