@@ -1,1 +1,10 @@
-aaa bbbb
+HEAD~1
+HEAD^1 
+HEAD^2 
+
+
+pick
+edit
+
+対話的リベースコマンド git rebase -i 
+
