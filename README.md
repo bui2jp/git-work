@@ -1,3 +1,14 @@
+コミットの修正
+コミットをまとめる
+
+33333
+
+commitメッセージの書き換え
+push していないcommit の修正
+
+git commit --amend 直前のコミットを修正する
+git rebase -i 複数のコミットをまとめる 
+
 githubで修正
 
 # git-work
