@@ -1,7 +1,4 @@
 # git-work
-aaa
-bbb
-ccc
 
 mergeには３つ
 1. fast Forward :  ブランチのポインタが進むだけ　新たなコミットはできない
