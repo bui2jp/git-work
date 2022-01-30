@@ -22,5 +22,7 @@ GitHub Flowとは
 　単純なので誰でも参加しやすい
 
 
-　
 
+feature2  
+Pull Request
+ 
