@@ -25,4 +25,5 @@ GitHub Flowとは
 
 feature2  
 Pull Request
- 
+
+git hub flow 
