@@ -1,6 +1,5 @@
 # git-work
-
-mergeには３つ
+merge
 1. fast Forward :  ブランチのポインタが進むだけ　新たなコミットはできない
 2. Auto Merge   :  マージコミットという新たなコミットができる
                    マージコミットは親を２つ持っている
@@ -20,10 +19,5 @@ GitHub Flowとは
 特徴
 　シンプルなワークフロー
 　単純なので誰でも参加しやすい
+git rebase master
 
-
-
-feature2  
-Pull Request
-
-git hub flow 
