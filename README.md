@@ -44,7 +44,7 @@ pick 900d91a 444
 
 を
 
-squash a5227db 1111
+pick a5227db 1111
 squash dab658f 222
 squash b18bf3d 333
 squash 900d91a 444
