@@ -1,5 +1,5 @@
 # git の基本的な使い方
-
+test
 ## 習得する必要のあること
 git add . 
 git add <filename>
