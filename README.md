@@ -61,9 +61,6 @@ d6fd43a Merge pull request #6 from bui2jp/feature/dev1
 
 
 
- 
- 
-
 git remote
 git remote -v
  
