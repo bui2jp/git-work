@@ -1,40 +1,60 @@
 # git の基本的な使い方
 
-## 習得する必要のあること
-git add . 
-git add <filename>
-
+## 最低限、習得する必要のあること
+```
 git branch 
 git branch <new branch name>
-git branch -d <target branch> 
+git branch -D <target branch> 
 
 git checkout <branch name>
+git checkout -b <branch name>
+
+git status
 
 git log
 git log --oneline --graph
 
-git push
+git add . 
+git add <filename>
+
+git commit
+git commit -m
+git commit --amend
+
 git merge
+git rebase
+
+git push
 git pull
 
-git status
-
-#コミットをきれいにする 基本的にはpushしていないもの。
-git commit --amend
-git rebase
-git rebase -i
-git rebase -i HEAD~3
-
-# コミット修正について
-## git commit --amend 
-直前のコミットを修正する
-
-## rebase コミットの順番を入れ替える、削除する
-完了したら git rebase --continue
-
-## rebase コミットを纏める
+git remote
+git remote -v
 ```
+
+# rebaseでのコミット修正について
+
+rebaseの２つの主要な機能
+```
+1. 繋げ直す
+2. 纏める
+```
+
+失敗したらしたら git rebase --abort  
+完了したら git rebase --continue  
+
+
+## rebaseでコミットを繋げ直す
+```
+$ git rebase [main]
+```
+
+## rebaseで複数のコミットを纏める
+```
+$ git rebase -i [まとめる地点のひとつ前のID]
+```
+
 例
+```
 $ git rebase -i HEAD~3
 
 pick a5227db 1111
@@ -42,12 +62,12 @@ pick dab658f 222
 pick b18bf3d 333
 pick 900d91a 444
 
-を
+を (squashのsに変更)
 
 pick a5227db 1111
-squash dab658f 222
-squash b18bf3d 333
-squash 900d91a 444
+s dab658f 222
+s b18bf3d 333
+s 900d91a 444
 
 としてコミットメッセージを "rebase12345" とかにすると
 69f6caeとなる。rebase12345
@@ -59,8 +79,10 @@ d6fd43a Merge pull request #6 from bui2jp/feature/dev1
 
 ```
 
+# Merge と Rebase の違い
 
+| ---- | Merge | Rebase | 
+| ---- | ---- | ---- |
+| 既存のコミットに影響を | 与えない | 与える |
 
-git remote
-git remote -v
- 
+rebase は共同開発の現場では、他人のコミットを変更してしまう可能性がある。利用する場合注意して。push していない、ローカルの開発内容であれば基本的に Rebase しても問題なし。
